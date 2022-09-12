@@ -20,7 +20,7 @@
                       <h3>Hasil Praktikum</h3>
                     </li>
                     <a href="week2/profil.html" class="list-group-item list-group-item-action">Minggu Ke-2</a>
-                    <a href="#" class="list-group-item list-group-item-action">Minggu Ke-3</a>
+                    <a href="minggu3/login.html" class="list-group-item list-group-item-action">Minggu Ke-3</a>
                     <a href="#" class="list-group-item list-group-item-action">Minggu Ke-4</a>
                 </div>
             </div>
