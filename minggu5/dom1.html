@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <title>Document</title>    
+    </head>
+    <body>
+
+        <div class="card">
+            <div class="card-body">
+                <form>
+
+                    <input id="inputName" type="text" class="form-control" placeholder="Name">
+                    <button class="btn btn-success" type="button" onclick="displayName();">Insert</button>
+
+                    <h3 id="infoName">Nama saya: <span id="displayName"></span></h3>    
+                </form>
+            </div>
+                    <button type="button" onclick="changeColor()" class="btn btn-primary">Ubah Warna</button>            
+        </div>
+
+        <script>
+            function displayName(){
+                let name = document.getElementById("inputName").value;
+                document.getElementById("displayName").innerText = name;
+            }
+
+            function changeColor(){
+                    document.getElementById("displayName").style.color="blue"
+        }
+        </script>
+    </body>
+</html>

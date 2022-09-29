@@ -1,0 +1,125 @@
+<!-- 
+    Nama File   : mahasiswa.html
+    NIM         : 11S20037
+    Kelas       : 13IF2 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <style>
+        fieldset{
+            max-width: 500px;
+        }
+        input.name, input.myPlace{
+            width: 200px;
+        }
+        input.myGender{
+            width: 120px;
+        }
+        .reload{
+            font-weight: 1000;
+            font-size: larger;
+            margin-left: calc(40%);
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form action="" method="get">
+            <label for="myName">Nama :</label>
+            <br>
+            <input type="text" name="input" id="myName" class="name" placeholder="Masukkan Nama Anda">
+            <br><br>
+            
+            <label for="myPlace">Tempat Lahir :</label>
+            <br>
+            <input type="text" name="tl" id="myPlace" class="myPlace" placeholder="Masukkan Tempat Lahir Anda">
+            <br><br>
+
+            <label for="myDate">Tanggal Lahir :</label>
+            <br>
+            <input type="date" name="tl" id="myDate" class="myDate">
+            <br><br>
+
+            <label for="myGender">Jenis Kelamin :</label>
+            <br>
+            <select name="jenisKelamin" class="myGender">
+                <option value="" hidden class="pilih">Pilih Salah Satu</option>
+                <option value="Laki-Laki">Laki Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+            <br><br>
+            
+            <label>Pendidikan Terakhir</label>
+            <br>
+            <input type="radio" name="mySchool" id="sd" value="SD" class="mySchool">
+            <label for="sd">SD</label>
+            <br>
+            <input type="radio" name="mySchool" id="smp" value="SMP" class="mySchool">
+            <label for="smp">SMP</label>
+            <br>
+            <input type="radio" name="mySchool" id="sma" value="SMA" class="mySchool">
+            <label for="sma">SMA</label>
+            <br>
+            <input type="radio" name="mySchool" id="s1" value="S1" class="mySchool">
+            <label for="s1">S1</label>
+            <br>
+            <input type="radio" name="mySchool" id="s2" value="S2" class="mySchool">
+            <label for="s2">S2</label>
+            <br>
+            <input type="radio" name="mySchool" id="s3" value="S3" class="mySchool">
+            <label for="s3">S3</label>
+            <br><br>
+            <button type="button" class="btn">Submit</button>
+            <p class="reload"></p>
+        </form>
+    </fieldset>
+
+    <fieldset class="container">
+        <table>
+            <tr>
+                <td>Nama Saya</td>
+                <td>:</td>
+                <td>
+                    <p class="nama"></p>    
+                </td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir Saya</td>
+                <td>:</td>
+                <td>
+                    <p class="tl1"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir Saya</td>
+                <td>:</td>
+                <td>
+                    <p class="tl2"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin Saya</td>
+                <td>:</td>
+                <td>
+                    <p class="jk"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Pendidikan Terakhir Saya</td>
+                <td>:</td>
+                <td>
+                    <p class="pend"></p>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script src="skripKu.js"></script>
+</body>
+</html>
